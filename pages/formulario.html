@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Formulário AIPRA</title>
+  <link rel="stylesheet" href="/css/formulario.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="/img/logo.png" alt="Logo da AIPRA" />
+      <h1>Aipra</h1>
+    </div>
+    <nav>
+      <a href="/index.html" class="btn">Voltar</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <form id="formulario">
+      <h1>Preencha o Formulário</h1>
+
+      <input type="text" name="nome" placeholder="Nome completo" required>
+
+      <div class="linha">
+        <input type="date" name="nascimento" required>
+        <input type="text" name="contato" placeholder="Telefone" required>
+      </div>
+
+      <input type="email" name="email" placeholder="Seu email" required>
+      <input type="text" name="cep" placeholder="CEP (somente números)" required>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="/scripts/formulario.js"></script>
+</body>
+</html>
