@@ -35,7 +35,7 @@ body {
 
 /* Sessão do Banner */
 .banner {
-  background: linear-gradient(#663e24cc, #663e24a9), url("/images/BannerDoacao.jpg") center / cover no-repeat;
+  background: linear-gradient(#663e24cc, #663e24a9), url("/img/images/BannerDoacao.jpg") center / cover no-repeat;
   color: white;
   padding: 4rem 0;
   text-align: center;
@@ -237,7 +237,7 @@ body {
   max-width: 82%;
   width: 100%;
   margin: 0 auto;
-  background: linear-gradient(135deg, rgba(74, 163, 175, 0.9), rgba(74, 163, 175, 0.7)), url("/images/BannerCard.jpg")
+  background: linear-gradient(135deg, rgba(74, 163, 175, 0.9), rgba(74, 163, 175, 0.7)), url("/img/images/BannerCard.jpg")
     center / cover no-repeat;
   border-radius: 40px;
   overflow: hidden;
@@ -293,7 +293,7 @@ body {
 }
 
 .destaque-card {
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
