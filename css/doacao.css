@@ -1,0 +1,752 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 2800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Cabeçalho */
+.header {
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 20px;
+}
+
+/* Sessão do Banner */
+.banner {
+  background: linear-gradient(#663e24cc, #663e24a9), url("/images/BannerDoacao.jpg") center / cover no-repeat;
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+  min-height: 45vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.banner-card {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+  padding: 0 2rem;
+}
+
+.banner .container {
+  width: 100%;
+  padding: 0;
+}
+
+.banner-card .logo {
+  width: 220px;
+  height: 180px;
+  margin-bottom: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banner-titulo {
+  font-size: 5rem;
+  font-weight: 1000;
+  margin-bottom: 2.5rem;
+  letter-spacing: 10px;
+  text-shadow: 2px 2px 4px #000000b3;
+}
+
+.banner-texto {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  text-shadow: 1px 1px 2px #000000b3;
+  line-height: 1.4;
+  letter-spacing: 1px;
+}
+
+.banner-subtexto {
+  font-size: 1.6rem;
+  opacity: 0.9;
+  text-shadow: 1px 1px 2px #000000b3;
+  line-height: 1.4;
+}
+
+/* Sessão Cards de Doação */
+.cards-doacao {
+  padding: 5rem 0;
+  background: #ffffff;
+}
+
+.titulo-sessao {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 6rem;
+  color: #5fb3d4;
+  text-shadow: 1px 1px 2px #0000007c;
+}
+
+.titulo-card {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #432918;
+  text-shadow: 1px 1px 2px #0000007e;
+}
+
+.descricao-card {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #432918;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.grid-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 2800px;
+  margin: 0 auto;
+}
+
+.item-card {
+  flex: 0 0 auto;
+  width: 450px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 60px;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+}
+
+.imagem-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 90px;
+}
+
+/* Sessão Conteúdo Monetário */
+.doacao-monetario {
+  padding: 4rem 0;
+  background: white;
+}
+
+.divisor-sessao {
+  width: 75%;
+  height: 3px;
+  background: #4aa3af;
+  margin: 0 auto 3rem;
+}
+
+.titulo-monetario {
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #5fb3d4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473);
+}
+
+.conteudo-monetario {
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto 3rem;
+}
+
+.subtitulo-monetario {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #432918;
+  margin-bottom: 2rem;
+  font-family: "Poppins", sans-serif;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473);
+}
+
+.icone-monetario {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.descricao-monetario {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #432918;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 75%;
+  margin: 0 auto 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473);
+}
+
+.banner-animais {
+  text-align: center;
+}
+
+.banner-animais img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  border-radius: 180px;
+}
+
+/* Sessão Card-Como doar */
+.como-doar {
+  padding: 4rem 0;
+  background: #ffffff;
+}
+
+.titulo-sessao-doacao {
+  font-size: 5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #5fb3d4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.473);
+}
+
+.card-doacao {
+  max-width: 82%;
+  width: 100%;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(74, 163, 175, 0.9), rgba(74, 163, 175, 0.7)), url("/images/BannerCard.jpg")
+    center / cover no-repeat;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  min-height: 700px;
+  padding: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.card-doacao:hover {
+  transform: translateY(-5px);
+}
+
+.conteudo-card {
+  display: grid;
+  grid-template-columns: 1fr 2px 1fr;
+  gap: 3rem;
+  padding: 3rem;
+  align-items: center;
+  min-height: 350px;
+}
+
+.lado-esquerdo {
+  color: white;
+}
+
+.titulo-card-doar {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.descricao-card-doar {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  opacity: 0.95;
+}
+
+.divisor-card {
+  width: 8px;
+  height: 500px;
+  background: #432918;
+  justify-self: center;
+  border-radius: 60px;
+}
+
+.lado-direito {
+  color: white;
+  text-align: center;
+}
+
+.destaque-card {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.titulo-cta-card {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.texto-cta-card {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+/* Estilo para os botões */
+.botoes-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.btn-whatsapp,
+.btn-formulario {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 12px 24px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 25px;
+  transition: background 0.3s ease, transform 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-whatsapp {
+  background: #432918;
+  opacity: 80%;
+  color: white;
+}
+
+.btn-whatsapp:hover {
+  background: #814e2c;
+  transform: translateY(-2px);
+}
+
+.btn-formulario {
+  background: #432918;
+  opacity: 80%;
+  color: white;
+}
+
+.btn-formulario:hover {
+  background: #814e2c;
+  transform: translateY(-2px);
+}
+
+.icone-btn {
+  width: 60px;
+  height: auto;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Footer */
+.footer {
+  background-color: #4aa3af;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===== MEDIA QUERIES PARA RESPONSIVIDADE ===== */
+
+/* Tablets (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .banner-titulo {
+    font-size: 4rem;
+    letter-spacing: 8px;
+  }
+
+  .banner-texto,
+  .banner-subtexto {
+    font-size: 1.4rem;
+  }
+
+  .titulo-sessao {
+    font-size: 3.5rem;
+    margin-bottom: 6rem;
+  }
+
+  .titulo-card {
+    font-size: 3rem;
+  }
+
+  .grid-cards {
+    gap: 6rem;
+    max-width: 100%;
+  }
+
+  .item-card {
+    width: 450px;
+  }
+
+  .titulo-monetario {
+    font-size: 3.5rem;
+  }
+
+  .titulo-sessao-doacao {
+    font-size: 4rem;
+  }
+
+  .card-doacao {
+    max-width: 80%;
+    padding: 2.5rem;
+  }
+
+  .conteudo-card {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .titulo-card-doar {
+    font-size: 2.5rem;
+  }
+
+  .titulo-cta-card {
+    font-size: 3.5rem;
+  }
+
+  .divisor-card {
+    height: 400px;
+  }
+}
+
+/* Tablets pequenos (481px - 768px) */
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 3rem 0;
+    min-height: 40vh;
+  }
+
+  .banner-card {
+    padding: 0 1.5rem;
+  }
+
+  .banner-card .logo {
+    width: 180px;
+    height: 150px;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner-titulo {
+    font-size: 3rem;
+    letter-spacing: 6px;
+    margin-bottom: 2rem;
+  }
+
+  .banner-texto,
+  .banner-subtexto {
+    font-size: 1.2rem;
+  }
+
+  .cards-doacao {
+    padding: 4rem 0;
+  }
+
+  .titulo-sessao {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .titulo-card {
+    font-size: 2.5rem;
+  }
+
+  .descricao-card {
+    font-size: 1.4rem;
+  }
+
+  .grid-cards {
+    gap: 4rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .titulo-monetario {
+    font-size: 3rem;
+  }
+
+  .subtitulo-monetario {
+    font-size: 1.8rem;
+  }
+
+  .descricao-monetario {
+    font-size: 1.8rem;
+    max-width: 90%;
+  }
+
+  .icone-monetario {
+    width: 150px;
+  }
+
+  .banner-animais img {
+    border-radius: 120px;
+  }
+
+  .titulo-sessao-doacao {
+    font-size: 3.5rem;
+  }
+
+  .card-doacao {
+    max-width: 95%;
+    padding: 2rem;
+    min-height: auto;
+  }
+
+  .conteudo-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .divisor-card {
+    width: 100%;
+    height: 8px;
+    margin: 1rem 0;
+  }
+
+  .titulo-card-doar {
+    font-size: 2.2rem;
+  }
+
+  .titulo-cta-card {
+    font-size: 3rem;
+  }
+
+  .btn-whatsapp,
+  .btn-formulario {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+
+  .icone-btn {
+    width: 50px;
+  }
+}
+
+/* Smartphones (320px - 480px) */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .header .container {
+    padding: 0.8rem 10px;
+  }
+
+  .banner {
+    padding: 2rem 0;
+    min-height: 35vh;
+  }
+
+  .banner-card {
+    padding: 0 1rem;
+  }
+
+  .banner-card .logo {
+    width: 150px;
+    height: 120px;
+    margin-bottom: 1rem;
+  }
+
+  .banner-titulo {
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+    margin-bottom: 1.5rem;
+  }
+
+  .banner-texto,
+  .banner-subtexto {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .cards-doacao {
+    padding: 3rem 0;
+  }
+
+  .titulo-sessao {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .titulo-card {
+    font-size: 2rem;
+  }
+
+  .descricao-card {
+    font-size: 1.2rem;
+  }
+
+  .grid-cards {
+    gap: 3rem;
+  }
+
+  .item-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .doacao-monetario {
+    padding: 3rem 0;
+  }
+
+  .titulo-monetario {
+    font-size: 2.5rem;
+  }
+
+  .subtitulo-monetario {
+    font-size: 1.5rem;
+  }
+
+  .descricao-monetario {
+    font-size: 1.5rem;
+    max-width: 95%;
+  }
+
+  .icone-monetario {
+    width: 120px;
+  }
+
+  .banner-animais img {
+    border-radius: 80px;
+  }
+
+  .como-doar {
+    padding: 3rem 0;
+  }
+
+  .titulo-sessao-doacao {
+    font-size: 2.8rem;
+  }
+
+  .card-doacao {
+    max-width: 98%;
+    padding: 1.5rem;
+    border-radius: 30px;
+  }
+
+  .conteudo-card {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .titulo-card-doar {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .descricao-card-doar {
+    font-size: 1.3rem;
+  }
+
+  .destaque-card {
+    font-size: 1.6rem;
+  }
+
+  .titulo-cta-card {
+    font-size: 2.5rem;
+  }
+
+  .texto-cta-card {
+    font-size: 1.3rem;
+  }
+
+  .btn-whatsapp,
+  .btn-formulario {
+    font-size: 18px;
+    padding: 8px 16px;
+    border-radius: 15px;
+  }
+
+  .icone-btn {
+    width: 40px;
+  }
+
+  .footer {
+    height: 80px;
+  }
+}
+
+/* Smartphones muito pequenos (até 320px) */
+@media screen and (max-width: 320px) {
+  .banner-titulo {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+
+  .banner-texto,
+  .banner-subtexto {
+    font-size: 0.9rem;
+  }
+
+  .titulo-sessao {
+    font-size: 2rem;
+  }
+
+  .titulo-card {
+    font-size: 1.8rem;
+  }
+
+  .titulo-monetario {
+    font-size: 2rem;
+  }
+
+  .titulo-sessao-doacao {
+    font-size: 2.2rem;
+  }
+
+  .titulo-card-doar {
+    font-size: 1.5rem;
+  }
+
+  .titulo-cta-card {
+    font-size: 2rem;
+  }
+
+  .btn-whatsapp,
+  .btn-formulario {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .icone-btn {
+    width: 35px;
+  }
+}
